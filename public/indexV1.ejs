@@ -15,38 +15,31 @@
 			}
 			
 			.head {
-				border-bottom: 1px solid black;
+				border: 1px solid black;
 				list-style-type: none;
 				width: 250px;
-				text-align: left;
+				text-align: center;
 				padding: 0;
-				padding-left:10px;
-				padding-bottom: 3px;
+				padding-left:20px;
 				position: relative;
 				left: -40px;
 				text-transform: uppercase;
-				font-size: 25px;
-				height: 18px;
 				font-weight: normal;
-				color: black;
-				margin-top: 5px;
+				color: aqua;
+				margin-top: 10px;
 				
 			}
-			
+
 			.row {
 				border-bottom: 1px solid rgba(204,204,204,0.2);
 				list-style-type: none;
 				color:grey;
 				text-align: left;
-				padding-bottom: 0px;
-				padding-top:5px;
+				padding: 0;
 				padding-left: 20px;
 				position: relative;
 				left: -40px;
 				width: 250px;
-			}
-			.row:first{
-				margin-bottom: -13px;
 			}
 			/*.row:hover{
 				background-color: rgba(204,204,204,0.2);
@@ -66,23 +59,23 @@
 			}
 			.bar {
 				position: fixed;
-				top: 0;
-				left: 0;
-				right: 0;
-				z-index: 2;
-				height: 37px;
-				line-height: 37px;
-				color: black;
-				text-shadow: 0 -1px black;
-				
-				border-bottom: 1px solid #191919;
-				background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee 50%, #d4d4d4 50%, #f2f2f2);
-				background-image: -moz-linear-gradient(top, #ffffff, #eeeeee 50%, #d4d4d4 50%, #f2f2f2);
-				background-image: -o-linear-gradient(top, #ffffff, #eeeeee 50%, #d4d4d4 50%, #f2f2f2);
-				background-image: linear-gradient(to bottom, top, #ffffff, #eeeeee 50%, #d4d4d4 50%, #f2f2f2);
-				-webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
-				box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
-
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  z-index: 2;
+				  height: 37px;
+				  line-height: 37px;
+				  color: #ddd;
+				  text-shadow: 0 -1px black;
+				  background: #243942;
+				  border-bottom: 1px solid #191919;
+				  background-image: -webkit-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: -moz-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: -o-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: linear-gradient(to bottom, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
+				  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
+								
 			}
 
 			.bar li {
@@ -92,72 +85,31 @@
 				border-left: 1px solid #2f4b56;
 				border-left: 1px solid rgba(255, 255, 255, 0.05);
 				border-right: 1px solid #111;
-				padding-left: 20px;
-				display: block;
 				float: left;
-				
 				position: relative;
 				right: -550px;
-				
+				z-index: 3;
 
 			}
-			
-			.bar li.about:hover {
-				background-color: rgb(180, 0, 0);
+			.bar li:hover {
+				background: #2f4b56;
+				background: rgba(255, 255, 255, 0.1);
 			}
-			.bar li.project:hover {
-				background-color: rgb(0, 0, 180);
-			}
-			.bar li.lab:hover {
-				background-color: rgb(245,245,0)
-			}
-			.bar li.contact:hover {
-				background-color: rgb(0, 180, 0);
-			}
-			
 			.bar li:active {
-				background-color: #88121b;
+				background-color: #1b2b32;
 				-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
 				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
 			}
 			.bar li a {
 				display: block;
 				padding: 0 15px;
-				padding-left: 30px;
-				color: black;
-				font-size: 20px;
+				color: #d0d9de;
 				text-decoration: none;
 				cursor: pointer;
+
 			}
-			
 			.bar li:nth-child(1) {
 				border-left: 1px solid #111;
-				background-image:url("icons/aboutINK.png");
-				background-size: 35px 35px;
-				background-repeat: no-repeat;
-				background-position: 5px 0px;
-			}
-			.bar li:nth-child(2) {
-				border-left: 1px solid #111;
-				background-image:url("icons/projectINK.png");
-				background-size: 35px 35px;
-				background-repeat: no-repeat;
-				background-position: 5px 0px;
-			}
-			.bar li:nth-child(3) {
-				border-left: 1px solid #111;
-				background-image:url("icons/labINK.png");
-				background-size: 35px 35px;
-				background-repeat: no-repeat;
-				background-position: 5px 0px;
-			}
-			.bar li:nth-child(4) {
-				border-left: 1px solid #111;
-				background-image:url("icons/contactINK.png");
-				background-size: 35px 35px;
-				background-repeat: no-repeat;
-				background-position: 5px 0px;
-
 			}
 			
 			.view {
@@ -170,17 +122,15 @@
 				position: relative;
 				float: right;
 				top: 20px;
-				
 				right: -70px;
 				overflow: hidden;
 
 			}
 			.page {
-			
 				height: 600px;
 				width: 100%;
 				position: relative;
-				/*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2) inset,-5px -5px 5px rgba(0, 0, 0, 0.2) inset;*/
+				background-image:url('backgroundPatterns/view.jpg');
 			}
 			.page:nth-child(1) {
 				top:-1800px;
@@ -230,9 +180,7 @@
 			.side li:first {
 				margin-top: 10px;
 			}
-			.intro {
-				margin-top: 0;
-			}
+			
 			
 			
 
@@ -244,29 +192,19 @@
 		<div class="wall">
 			<div class="bar">
 				<ul>
-					<li class="button about" ><a href="#">About</a></li>
-					<li class="button project"><a href="#" >Projects</a></li>
-					<li class="button lab"><a href="#" >Lab</a></li>
-					<li class="button contact"><a href="#">Contact</a></li>
+					<li class="button"><a href="#">About</a></li>
+					<li class="button"><a href="#">Projects</a></li>
+					<li class="button"><a href="#">Lab</a></li>
+					<li class="button"><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="container">
 			<div class="view">
-				<div class = "page contactp">
-					<p class="intro">If u wish to talk to delightful me, here is how you do it:</p>
-					<a href="https://www.facebook.com/tomislav.tomcic">Facebook</a>
-					<a href="https://twitter.com/TomislavTomcic">Twitter</a>
-					<a href="https://plus.google.com/118166481614853151804/posts">Google+</a>
-					<a href="http://www.linkedin.com/profile/view?id=175289609&trk=nav_responsive_tab_profile">LinkedIn</a>
-				</div>
-				<div class = "page labp"><p class="intro">Something i put together...</p></div>
-				<div class = "page projectp"><p class="intro">These are some of the projects iv worked on...</p></div>
-				<div class = "page aboutp">
-					<p class="intro"><span>Hello!</span><br>My name is Tomislav Tomcic, and I'm a 22-year front-end developer living in Novi Sad</p>
-				</div>
-					
-				
+				<div class = "page">PAGE 4</div>
+				<div class = "page">PAGE 3</div>
+				<div class = "page">PAGE 2</div>
+				<div class = "page">PAGE 1</div>
 			</div>
 			<div class="side">
 				<ul>
@@ -282,7 +220,7 @@
 				 	<li class = "row">His Dark Materials by Filip Pullman</li>
 				  	<li class = "row">The Protestant Ethic and the Spirit of Capitalism by Max Weber</li>
 					<li class = "row">Democracy in America by Alexis de Tocquille</li>
-					<li class = "row">Javascript: The definitive guide by David Flanagan</li>
+					<li class = "row">avascript: The definitive guide by David Flanagan</li>
 					<li class = "row">Universal Principles of Design by Wiliam Lidwell, Kritina Holden, Jill Butler</li>
 				</ul>
 				<ul>
