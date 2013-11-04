@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<style type="text/css">
+			
+			
+			/*********************************************************************/
+			ul, li {
+				margin-top:0;
+			}
+			body {
+				margin: auto;
+				background-image:url('backgroundPatterns/dark_wall.png');
+			}
+			
+			.head {
+				border: 1px solid black;
+				list-style-type: none;
+				width: 250px;
+				text-align: center;
+				padding: 0;
+				padding-left:20px;
+				position: relative;
+				left: -40px;
+				text-transform: uppercase;
+				font-weight: normal;
+				color: aqua;
+				margin-top: 10px;
+				
+			}
+
+			.row {
+				border-bottom: 1px solid rgba(204,204,204,0.2);
+				list-style-type: none;
+				color:grey;
+				text-align: left;
+				padding: 0;
+				padding-left: 20px;
+				position: relative;
+				left: -40px;
+				width: 250px;
+			}
+			/*.row:hover{
+				background-color: rgba(204,204,204,0.2);
+				color: white;
+				cursor:default;
+			}*/
+			
+			.wall{
+				height: 100px;
+				background-image:url('backgroundPatterns/white_brick_wall.png');
+				box-shadow:0px 3px 5px #000;
+				z-index: 4;
+			}
+			.container {
+				width: 80%;
+				margin: auto;
+			}
+			.bar {
+				position: fixed;
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  z-index: 2;
+				  height: 37px;
+				  line-height: 37px;
+				  color: #ddd;
+				  text-shadow: 0 -1px black;
+				  background: #243942;
+				  border-bottom: 1px solid #191919;
+				  background-image: -webkit-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: -moz-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: -o-linear-gradient(top, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  background-image: linear-gradient(to bottom, #243942, #22373f 50%, #1d2e35 50%, #1b2b32);
+				  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
+				  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.8);
+								
+			}
+
+			.bar li {
+				height: 37px;
+				width: 120px;
+				list-style-type: none;
+				border-left: 1px solid #2f4b56;
+				border-left: 1px solid rgba(255, 255, 255, 0.05);
+				border-right: 1px solid #111;
+				float: left;
+				position: relative;
+				right: -550px;
+				z-index: 3;
+
+			}
+			.bar li:hover {
+				background: #2f4b56;
+				background: rgba(255, 255, 255, 0.1);
+			}
+			.bar li:active {
+				background-color: #1b2b32;
+				-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
+				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
+			}
+			.bar li a {
+				display: block;
+				padding: 0 15px;
+				color: #d0d9de;
+				text-decoration: none;
+				cursor: pointer;
+
+			}
+			.bar li:nth-child(1) {
+				border-left: 1px solid #111;
+			}
+			
+			.view {
+				background-color: white;
+				border: 2px solid black;
+				border-top: none;
+				border-bottom: none;
+				height: 600px;
+				width: 78%;
+				position: relative;
+				float: right;
+				top: 20px;
+				right: -70px;
+				overflow: hidden;
+
+			}
+			.page {
+				height: 600px;
+				width: 100%;
+				position: relative;
+				background-image:url('backgroundPatterns/view.jpg');
+			}
+			.page:nth-child(1) {
+				top:-1800px;
+			}
+			.page:nth-child(2) {
+				top:-1800px;
+			}
+			.page:nth-child(3) {
+				top:-1800px;
+			}
+			.page:nth-child(4) {
+				top:-1800px;
+			}
+			
+			.side {
+				height: 600px;
+				width: 270px;
+				position: relative;
+				top:0;
+				border: 2px solid black;
+				border-top: none;
+				background-image:url('backgroundPatterns/type.png');
+				box-shadow:1px 1px 5px #000,
+							0 5px 3px #000 inset;
+				left:-20px;
+				
+
+			}
+			
+			.likes {
+				height: 150px;
+				width: 80%;
+				border-bottom: 1px solid aqua;
+				margin-bottom: 5px;
+				margin-left: 20px;
+				padding-top: 20px;
+				
+			}
+			.side li:hover {
+				opacity: 0.5;
+				cursor: default;
+				color: white;
+			}
+			.side ul {
+				padding-top: 10px;
+			}
+			.side li:first {
+				margin-top: 10px;
+			}
+			
+			
+			
+
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="wall">
+			<div class="bar">
+				<ul>
+					<li class="button"><a href="#">About</a></li>
+					<li class="button"><a href="#">Projects</a></li>
+					<li class="button"><a href="#">Lab</a></li>
+					<li class="button"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="view">
+				<div class = "page">PAGE 4</div>
+				<div class = "page">PAGE 3</div>
+				<div class = "page">PAGE 2</div>
+				<div class = "page">PAGE 1</div>
+			</div>
+			<div class="side">
+				<ul>
+					<li class = "head">Anime</li>
+					<li class = "row">One Piece</li>
+					<li class = "row">FMA Brotherhood</li>
+					<li class = "row">Code Geass</li>
+					<li class = "row">Full Metal Panic</li>
+					<li class = "row">Steins Gate</li>
+				</ul>
+				<ul>
+				    <li class="head">Books</li>
+				 	<li class = "row">His Dark Materials by Filip Pullman</li>
+				  	<li class = "row">The Protestant Ethic and the Spirit of Capitalism by Max Weber</li>
+					<li class = "row">Democracy in America by Alexis de Tocquille</li>
+					<li class = "row">avascript: The definitive guide by David Flanagan</li>
+					<li class = "row">Universal Principles of Design by Wiliam Lidwell, Kritina Holden, Jill Butler</li>
+				</ul>
+				<ul>
+					<li class = "head">Hobbies</li>
+					<li class = "row">Swimming, chess, reading...</li>
+				</ul>	
+				
+			</div>
+		</div>
+		 <script type="text/javascript" src="js/lib/shims.js"></script>
+		 <script type="text/javascript" src="js/lib/underscore-min.js"></script>
+		 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		 <script type="text/javascript" src="js/lib/shiro/shiro-class.js"></script>
+		 <script type="text/javascript" src="js/lib/shiro/shiro-eventemitter.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			
+			var previousPos = 0;
+			$('.button').click(function(){
+				
+				var currentPos = $(this).index();
+				var distance = (currentPos - previousPos)*600;
+				var ImplantString = distance.toString();
+				var assembeled;
+				
+				if (distance<0) {
+					assembeled = "-="+ImplantString.substring(1);
+				}
+				else{
+					assembeled = "+="+ImplantString;
+				}
+				
+				$('.view').find(".page").animate({top: assembeled},500);
+				previousPos = $(this).index();
+				
+			})
+			
+			
+		}); //end ready	
+		</script>
+	</body>
+</html>

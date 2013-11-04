@@ -1,0 +1,191 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+
+@import "_bootstrap";
+@import "font-awesome/font-awesome";
+
+@import "_about";
+@import "_work";
+
+html{
+	font-size:100%;
+	
+}
+
+body{
+	font-family: 'Open Sans';
+	background-image:url('../img/world.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+.container{
+	margin:auto;
+	width:100%;
+	max-width:960px;
+}
+
+.clearfix{
+	clear:both;
+}
+////////////////////////////////////////////////////////////////////
+//*****Navigation*****************
+.big{
+
+}
+.small{
+
+}
+
+.bar{
+	
+	width: 100%;
+	height: 60px;
+	background-color:#383838;
+	
+	.main-nav{
+
+		text-align: center;
+
+		.list-nav{
+
+			border-top:5px solid #cbcbcb;
+
+			li{
+				
+				display: inline-block;
+				padding: 17px;
+				vertical-align: top;
+				
+				@media screen and ( max-width: 760px ) { 
+					padding: 17px 5px;
+				}
+
+
+				a{
+					color:#dadada;
+					text-transform: uppercase;
+					font-size: 16px;
+					text-decoration: none;
+					
+					@media screen and ( max-width: 760px ) { 
+						font-size: 12px;
+					}
+
+					&:hover{
+						color:white;
+					}
+				}
+
+				&.triangle{
+					
+					padding:0px;
+					
+					img{
+						width: 110px;
+						height: 110px;
+						position:relative;
+						top:-5px;
+
+						@media screen and ( max-width: 760px ) { 
+							width: 70px;
+						    height: 70px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+
+.contact{
+	
+	width:100%;
+	background-color:#00AC60;
+	border-bottom:5px solid #cbcbcb;
+	overflow:hidden;
+	border-top:10px solid #008d48;
+	text-align:center;
+	
+	
+
+	h4{
+		line-height: 1.5;
+		font-size: 45px;
+		color: white;
+		font-weight: 300;
+		
+		margin-bottom: 20px;
+	}
+
+	.container{
+
+		max-width: 1110px;
+		
+		
+		.underground{
+			overflow: hidden;
+			width: 100%;
+			
+			p{
+				display: inline-block;
+				position:relative;
+				
+			}
+			img{
+				position:relative;
+				top:-3px;
+			}
+		}		
+	
+		
+		a{
+			overflow: hidden;
+			color:white;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 13px;
+		}
+			
+		.links{
+			overflow: hidden;
+			width: 100%;
+			height: 30px;
+			background-color:#008d48;
+			text-align: center;
+			
+			.list-nav{
+
+				display:inline-block;
+				margin: auto;
+				height: 30px;
+				
+				li{
+
+					display:inline-block;
+					width: 80px;
+					height: 30px;
+					background-color:#008d48;
+					float: right;
+					text-align: center;
+
+					a{
+						color:white;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size: 13px;
+					}
+				}
+			}
+			
+		}
+	}
+}
