@@ -8573,7 +8573,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 4, ../sass/_about.scss */
 .about {
-  background-color: rgba(0, 180, 255, 0.8);
+  background-color: rgba(30, 144, 255, 0.8);
   border-bottom: 10px solid #008c9e;
 }
 @media screen and (max-width: 760px) {
@@ -9186,7 +9186,7 @@ html {
 /* line 20, ../sass/screen.scss */
 body {
   font-family: 'Open Sans';
-  background-image: url("../img/world.png");
+  background-image: url("../img/world1.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -9268,13 +9268,12 @@ body {
 /* line 109, ../sass/screen.scss */
 .contact {
   width: 100%;
-  background-color: #00AC60;
-  border-bottom: 5px solid #cbcbcb;
+  background-color: #9400d3;
   overflow: hidden;
-  border-top: 10px solid #008d48;
+  border-top: 10px solid #510f6d;
   text-align: center;
 }
-/* line 120, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .contact h4 {
   line-height: 1.5;
   font-size: 45px;
@@ -9282,26 +9281,26 @@ body {
   font-weight: 300;
   margin-bottom: 20px;
 }
-/* line 129, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .contact .container {
   max-width: 1110px;
 }
-/* line 134, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .contact .container .underground {
   overflow: hidden;
   width: 100%;
 }
-/* line 138, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .contact .container .underground p {
   display: inline-block;
   position: relative;
 }
-/* line 143, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .contact .container .underground img {
   position: relative;
   top: -3px;
 }
-/* line 150, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .contact .container a {
   overflow: hidden;
   color: white;
@@ -9309,30 +9308,30 @@ body {
   text-transform: uppercase;
   font-size: 13px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .contact .container .links {
   overflow: hidden;
   width: 100%;
   height: 30px;
-  background-color: #008d48;
+  background-color: #510f6d;
   text-align: center;
 }
-/* line 165, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .contact .container .links .list-nav {
   display: inline-block;
   margin: auto;
   height: 30px;
 }
-/* line 171, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .contact .container .links .list-nav li {
   display: inline-block;
   width: 80px;
   height: 30px;
-  background-color: #008d48;
+  background-color: #510f6d;
   float: right;
   text-align: center;
 }
-/* line 180, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .contact .container .links .list-nav li a {
   color: white;
   text-decoration: none;
